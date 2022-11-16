@@ -52,9 +52,7 @@ html {
   h2 {
     font-size: 4.2rem;
   }
-  ul {
-    list-style: none;
-  }
+ 
   a {
     text-decoration: none;
     color: var(--main-white);
@@ -67,12 +65,18 @@ html {
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    transition: 0.5s;
+  }
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  .nav.red {
     background: var(--main-red);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    z-index: 10;
   }
   .nav-list {
     display: flex;
